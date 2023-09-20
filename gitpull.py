@@ -9,7 +9,7 @@ def pull():
         os.chdir(githuprepopath)
         os.system("git pull --no-ff && git fetch -p")
         global cves
-        cves=list(set(re.findall("CVE-\d+-\d+",subprocess.getoutput('gh pr list --search "assignee:s-munukutla sort:created-asc" -L 200 -l "issues"'))))
+        cves=list(set(re.findall("CVE-\d+-\d+",subprocess.getoutput('gh pr list --search "assignee:<username> sort:created-asc" -L 200 -l "issues"'))))
         os.chdir(home)
 def downloadfile():
         pull()
