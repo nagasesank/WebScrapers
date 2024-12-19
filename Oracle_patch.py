@@ -47,7 +47,7 @@ def orapatchl(newfile):
         print(patchurl,cveno)
         login="https://login.oracle.com/mysso/signon.jsp"
         # give the exact location for the geckodriver if error delete the snap firefox install firefox from website
-        new_driver_path = '/home/surya/Downloads/CVE Writer/CVE-writer1/code/geckodriver'
+        new_driver_path = 'geckodriver'
         serv = Service(new_driver_path)
         options = FirefoxOptions()
         # options.add_argument("--headless")
