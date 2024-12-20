@@ -13,8 +13,6 @@ Each tool has its own requirements
 python3 Gitlab_vers_check.py test.xml
 python3 gitpull.py 
 python3 Oracle_patch.py "CVE Number"
-python3 splunk_ver.py "CVE Number"
-python3 check_versions.py ".xml"
 </pre>
 
 #### Note
